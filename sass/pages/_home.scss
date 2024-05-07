@@ -1,0 +1,32 @@
+.bouton1 {
+    border-radius: 50px;
+    padding: 10px 30px; 
+    background: hsl(137, 48%, 46%); 
+    color: white; 
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: wavy;
+    
+    
+    }
+    a.bouton1:hover {
+    background: #019961; 
+    }
+    .bouton1 {
+        background: linear-gradient(to bottom right, #B5D653, #79C258, #019961);
+      }
+
+      .bouton2 {
+        border-radius: 50px;
+        padding: 10px 30px; 
+        color: white; 
+        font-weight: bold;
+        font-size: 18px;
+        cursor: pointer;
+        text-decoration: wavy;
+        }
+        a.bouton2:hover {
+            background: green; 
+            }
+        
