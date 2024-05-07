@@ -1,0 +1,67 @@
+.countdown {
+    display: flex;
+    margin-left: 4em;
+}
+
+.velibmain {
+    padding-top: 12em;
+}
+
+.countdown div {
+    margin: 5px;
+    color: white;
+    background-color: #019961;
+    width: 3em;
+    height: 5em;
+}
+
+.countdown p {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 15px;
+}
+
+.countdown span {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 1em;
+}
+
+.velibmain h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.velibsoon {
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.velibsoon p {
+    padding-top: 1em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    width: 85%;
+}
+
+.velibsoon span {
+    margin-left: 10px;
+}
+
+.velibsoon br{
+    margin-top: 5px;
+}
