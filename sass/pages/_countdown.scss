@@ -1,10 +1,12 @@
 .countdown {
     display: flex;
-    margin-left: 4em;
+    justify-content: center;
+    align-items: center;
 }
 
 .velibmain {
-    padding-top: 12em;
+    padding-top: 9em;
+    padding-bottom: 2em;
 }
 
 .countdown div {
@@ -51,11 +53,15 @@
 
 .velibsoon p {
     padding-top: 1em;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;  
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
     width: 85%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .velibsoon span {
@@ -65,3 +71,32 @@
 .velibsoon br{
     margin-top: 5px;
 }
+
+// Tablette
+
+@media screen and (min-width: 768px) {
+    .velibmain {
+        padding-bottom: 20em;
+    }
+
+
+    }
+
+        // Notebook
+
+@media screen and (min-width: 1336px) {
+
+    .velibmain {
+        padding-bottom: 12em;
+    }
+    }
+
+            // Desktop
+
+            @media screen and (min-width: 1920px) {
+                .velibmain {
+                    padding-top: 18em;
+                    padding-bottom: 14em;
+                }
+
+                }
