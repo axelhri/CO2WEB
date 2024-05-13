@@ -1,7 +1,7 @@
 .bouton1 {
     display: flex;
     position: absolute;
-    left: 25%;
+    left: 7%;
     bottom: 20%;
     border-radius: 50px;
     padding: 10px 30px; 
@@ -11,6 +11,8 @@
     font-size: 18px;
     cursor: pointer;
     text-decoration: wavy;
+    width: 70%;
+    justify-content: center;
     
     
     }
@@ -24,7 +26,7 @@
       .bouton2 {
         display: flex;
         position: absolute;
-        left: 25%;
+        left: 7%;
         bottom: 10%;
         border-radius: 100px;
         border-style:solid;
@@ -35,6 +37,8 @@
         font-size: 18px;
         cursor: pointer;
         text-decoration: wavy;
+        width: 75%;
+        justify-content: center;
         
         }
         a.bouton2:hover {
