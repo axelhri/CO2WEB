@@ -1,4 +1,8 @@
 .bouton1 {
+    display: flex;
+    position: absolute;
+    left: 25%;
+    bottom: 20%;
     border-radius: 50px;
     padding: 10px 30px; 
     background: hsl(137, 48%, 46%); 
@@ -18,6 +22,10 @@
       }
 
       .bouton2 {
+        display: flex;
+        position: absolute;
+        left: 25%;
+        bottom: 10%;
         border-radius: 100px;
         border-style:solid;
         border-color: #019961;
@@ -27,9 +35,37 @@
         font-size: 18px;
         cursor: pointer;
         text-decoration: wavy;
+        
         }
         a.bouton2:hover {
             background: #019961; 
             color: white;
             }
+
+.ou{
+  display: flex;
+  position: absolute;
+  bottom: 16.5%;
+  left: 43%;
+}
+
+.imagegreen{
+  display: flex;
+  position: absolute;
+  left: 30%;
+  width: 250px;
+}
+
+.paragraphegreen{
+  display: flex;
+  position: absolute;
+  bottom: 30%;
+}
+
+.titlegreen{
+  display: flex;
+  position: absolute;
+  bottom: 45%;
+  justify-content: center;
+}
         
