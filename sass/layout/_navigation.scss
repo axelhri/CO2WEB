@@ -15,6 +15,7 @@ nav img {
 }
 
 .burgerlist {
+    z-index: 1;
     background-color: rgb(255, 255, 255);
     height: 100%;
     width: 100%;
@@ -33,6 +34,7 @@ nav img {
     font-size: 27px;
     opacity: 0.2;
     transition: 100ms;
+    z-index: 1;
 }
 
 
@@ -88,3 +90,110 @@ nav img {
 .burgermenu.active span:nth-child(3) {
     opacity: 0;
 }
+
+.burgerlist span {
+    color: #3DAD5C;
+    font-weight: 700;
+}
+
+// Tablette
+
+@media screen and (min-width: 768px) {
+
+    header {
+        border-bottom: 2px solid rgba(128, 128, 128, 0.199);
+    }
+
+    .burgermenu {
+        display: none;
+    }
+
+    .burgerlist {
+        background-color: transparent;
+        position: sticky;
+        visibility: visible;
+        font-family: "Montserrat", sans-serif;
+        font-size: 11px;
+        font-weight: 500;
+        opacity: 1;
+        padding-bottom: 8px;
+        margin-left: 65px;
+    }
+
+    .burgerlist ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 2em;
+    }
+
+    .burgerlist li {
+        color: #3DAD5C;
+        list-style-type: none;
+        margin: 0px;
+        border-bottom: 0px solid #3DAD5C;
+        padding-bottom: 0px;
+        margin-left: 1px;
+    }
+    }
+
+    // Notebook
+
+@media screen and (min-width: 1336px) {
+
+    header {
+        border-bottom: 2px solid rgba(128, 128, 128, 0.199);
+    }
+
+    .burgermenu {
+        display: none;
+    }
+
+    .burgerlist {
+        background-color: transparent;
+        position: sticky;
+        visibility: visible;
+        font-family: "Montserrat", sans-serif;
+        font-size: 11px;
+        font-weight: 500;
+        opacity: 1;
+        padding-bottom: 8px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    li:hover {
+        cursor: pointer;
+    }
+
+    }
+
+        // Desktop
+
+        @media screen and (min-width: 1920px) {
+
+            header {
+                border-bottom: 2px solid rgba(128, 128, 128, 0.199);
+            }
+        
+            .burgermenu {
+                display: none;
+            }
+        
+            .burgerlist {
+                background-color: transparent;
+                position: sticky;
+                visibility: visible;
+                font-family: "Montserrat", sans-serif;
+                font-size: inherit;
+                font-weight: 500;
+                opacity: 1;
+                padding-bottom: 0px;
+                margin-left: 0px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+            }
+            }
