@@ -1,6 +1,6 @@
 .bouton1 {
     display: flex;
-    position: absolute;
+    position: sticky;
     left: 7%;
     bottom: 20%;
     border-radius: 50px;
@@ -25,7 +25,7 @@
 
       .bouton2 {
         display: flex;
-        position: absolute;
+        position: sticky;
         left: 7%;
         bottom: 10%;
         border-radius: 100px;
@@ -48,21 +48,21 @@
 
 .ou{
   display: flex;
-  position: absolute;
+  position: sticky;
   bottom: 16.5%;
   left: 43%;
 }
 
 .imagegreen{
   display: flex;
-  position: absolute;
+  position: sticky;
   left: 30%;
   width: 250px;
 }
 
 .paragraphegreen{
   display: flex;
-  position: absolute;
+  position: sticky;
   bottom: 30%;
   left: 5%;
 }
@@ -76,7 +76,7 @@
 
 .titlegreen{
   display: flex;
-  position: absolute;
+  position: sticky;
   bottom: 45%;
   justify-content: center;
   left: 5%;
@@ -87,4 +87,6 @@
     font-size: inherit;
     font-weight: 600;
 }
+
+
         
