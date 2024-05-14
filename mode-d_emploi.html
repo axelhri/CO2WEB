@@ -57,14 +57,32 @@
     <h1 class="titreMD">Comment ça marche?</h1>
 
     <div class="carousel-container">
-        <button class="prev" onclick="prevSlide()"></button>
+
         <div class="carousel-wrapper">
-        <div class="carousel-slide"> <img src="images/Groupe60.svg" alt="Slide 1"></div>
-        <div class="carousel-slide"> <img src="images/Groupe62.svg" alt="Slide 2"></div>
-        <div class="carousel-slide"> <img src="images/Groupe64.svg" alt="Slide 3"></div>
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <img src="images/Groupe60.svg" alt="Image 1">
+                    <div class="slide-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                        repudiandae porro delectus magni soluta at cumque vel nemo tenetur ea expedita ut laudantium
+                        incidunt itaque odio, fuga maiores, iure saepe?</div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <img src="images/Groupe62.svg" alt="Image 2">
+                    <div class="slide-caption">Texte correspondant à l'image 2</div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <img src="images/Groupe64.svg" alt="Image 3">
+                    <div class="slide-caption">Texte correspondant à l'image 3</div>
+                </div>
+            </div>
+        </div>
+        <button class="next" onclick="nextSlide()">Suivant</button>
+        <button class="prev" onclick="prevSlide()">Précédent</button>
     </div>
-    <button class="next" onclick="nextSlide()"></button>
-</div>
 
 <script src="javascript/side.js"></script>
   

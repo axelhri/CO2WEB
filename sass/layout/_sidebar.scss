@@ -19,6 +19,12 @@
     flex: 0 0 100%;
     width: 100%;
     display: none; /* Masquer les diapositives par défaut */
+    position: relative; /* Position relative pour le positionnement absolu du texte */
+  }
+
+  .slide-content {
+    position: relative;
+    text-align: center; /* Centrer le contenu */
   }
   
   /* Afficher uniquement la diapositive actuelle */
