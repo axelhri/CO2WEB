@@ -1,0 +1,48 @@
+.titreMD {
+    padding: 1em;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carousel-wrapper {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousel-slide {
+    flex: 0 0 100%;
+    width: 100%;
+    display: none; /* Masquer les diapositives par défaut */
+  }
+  
+  /* Afficher uniquement la diapositive actuelle */
+  .carousel-slide.active {
+    display: block;
+  }
+  
+  button.prev,
+  button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button.prev {
+    left: 10px;  
+  }
+  
+  button.next {
+    right: 10px;
+  }
+  
