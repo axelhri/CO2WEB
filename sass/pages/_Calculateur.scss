@@ -1,0 +1,293 @@
+.formcal label {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.formcal input {
+    height: 2em;
+}
+
+.formcal ::placeholder {
+    font-size: 15px;
+}
+
+.formcal p {
+    padding-top: 2em;
+    font-size: 10px;
+}
+
+.formcalc {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.116); 
+}
+
+.scalc {
+    display: block;
+}
+
+.scalc2 {
+    display: none;
+}
+
+
+.formcal p br {
+    display: none;
+}
+
+.cal h2 {
+    display: none;
+}
+
+.cal h1 {
+    display: block;
+}
+
+// Tablette
+
+@media screen and (min-width: 768px) {
+
+    .formcal {
+        padding: 2em;
+    }
+    
+    .formcal label {
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+    .scalc {
+        display: none;
+    }
+
+    .scalc2 {
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+
+    .formcal p br {
+        display: block;
+    }
+     
+    .formcal p span {
+        margin-left: 170px;
+    }
+    }
+
+     // Notebook
+
+@media screen and (min-width: 1366px) {
+
+    .formcalc {
+        width: 60%;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        z-index: 1;
+    }
+
+    .formcalc p {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .formcal p span {
+        margin-left: 5px;
+    }
+
+    #dist {
+        height: 4em;
+    }
+
+    #jourt {
+        height: 4em;
+    }
+
+    .fl33 {
+        position: absolute;
+        top: 53%;
+        left: 10%;
+        width: 15%;
+    }
+
+    .fl22 {
+        position: absolute;
+        top: 48%;
+        left: 74%;
+        width: 15%;
+    }
+
+    .cal h2 {
+        text-align: center;
+        display: block;
+        font-size: 37px;
+    }
+
+    .cal h1 {
+        display: none;
+    }
+
+    .fl44 {
+        position: absolute;
+        top: 23%;
+        left: 74%;
+        z-index: 1;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 20px solid #019961;
+    }
+
+    .fl55 {
+        position: absolute;
+        top: 200px;
+        left: 1030px;
+        z-index: 1;
+        width: 1px;
+        height: 1px;
+        border-radius: 50%;
+        border: 50px solid #ffffff;
+    }
+
+    
+    .fl66 {
+        position: absolute;
+        top: 17%;
+        left: 85%;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 20px solid #79C258;
+    }
+
+    
+    .fl77 {
+        position: absolute;
+        top: 34%;
+        left: 85%;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 20px solid #B5D653;
+    }
+
+    .cal {
+        margin-top: -10px;
+    }
+    }
+
+         // Desktop
+
+@media screen and (min-width: 1920px) {
+
+    .formcalc {
+        width: 60%;
+        height: 30em;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        z-index: 1;
+        padding-top: 2em;
+    }
+
+    .formcalc p {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .formcal p span {
+        margin-left: 5px;
+    }
+
+    #dist {
+        height: 4em;
+    }
+
+    #jourt {
+        height: 4em;
+    }
+
+    .fl33 {
+        position: absolute;
+        top: 57%;
+        left: 10%;
+        width: 15%;
+    }
+
+    .fl11 {
+        position: absolute;
+        top: 19%;
+        left: 9%;
+        width: 20%;
+    }
+
+    .fl22 {
+        position: absolute;
+        top: 54%;
+        left: 74%;
+        width: 15%;
+    }
+
+    .cal h2 {
+        text-align: center;
+        display: block;
+        font-size: 37px;
+        padding-bottom: 1em;
+        padding-top: 2em;
+    }
+
+    .cal h1 {
+        display: none;
+    }
+
+    .fl44 {
+        position: absolute;
+        top: 25%;
+        left: 76%;
+        z-index: 1;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 20px solid #019961;
+    }
+
+    .fl55 {
+        position: absolute;
+        top: 260px;
+        left: 1465px;
+        z-index: 1;
+        width: 1px;
+        height: 1px;
+        border-radius: 50%;
+        border: 50px solid #ffffff;
+    }
+
+    
+    .fl66 {
+        position: absolute;
+        top: 18%;
+        left: 83%;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 20px solid #79C258;
+    }
+
+    
+    .fl77 {
+        position: absolute;
+        top: 35%;
+        left: 83%;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 20px solid #B5D653;
+    }
+
+    .cal {
+        margin-top: -10px;
+    }
+ }
