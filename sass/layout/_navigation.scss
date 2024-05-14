@@ -37,6 +37,14 @@ nav img {
     z-index: 1;
 }
 
+.votrepc {
+    display: none;
+}
+
+.votre {
+    display: block;
+}
+
 
 .burgerlist.active {
     visibility: visible;
@@ -154,7 +162,7 @@ nav img {
         position: sticky;
         visibility: visible;
         font-family: "Montserrat", sans-serif;
-        font-size: 11px;
+        font-size: 13px;
         font-weight: 500;
         opacity: 1;
         padding-bottom: 8px;
@@ -195,5 +203,17 @@ nav img {
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-start;
+            }
+
+            nav img {
+                margin-left: 4em;
+            }
+
+            .votre {
+                display: none;
+            }
+            
+            .votrepc {
+                display: block;
             }
             }
