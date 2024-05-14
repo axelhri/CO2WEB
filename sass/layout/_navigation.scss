@@ -91,6 +91,11 @@ nav img {
     opacity: 0;
 }
 
+.burgerlist span {
+    color: #3DAD5C;
+    font-weight: 700;
+}
+
 // Tablette
 
 @media screen and (min-width: 768px) {
@@ -161,11 +166,6 @@ nav img {
 
     li:hover {
         cursor: pointer;
-    }
-
-    .burgerlist span {
-        color: #3DAD5C;
-        font-weight: 700;
     }
 
     }
