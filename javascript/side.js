@@ -4,10 +4,18 @@ const slides = document.querySelectorAll('.carousel-slide');
 function showSlide(index) {
     // Masquer toutes les diapositives
     slides.forEach(slide => {
-        slide.classList.remove('active');
+        slide.classList.remove('prev', 'active', 'next');
     });
     // Afficher la diapositive spécifiée par l'index
     slides[index].classList.add('active');
+
+    if (index > 0) {
+        slides[index - 1].classList.add('prev');
+    }
+
+    if (index < slides.length - 1) {
+        slides[index + 1].classList.add('next');
+    }
 }
 
 function prevSlide() {

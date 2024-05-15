@@ -14,7 +14,10 @@
 .carousel-wrapper {
   display: flex;
   transition: transform 0.3s ease-in-out;
+  width: 100%;
+    overflow: hidden; /* Masquer les diapositives qui dépassent du conteneur */
 }
+
 
 .carousel-slide {
   flex: 0 0 100%;
@@ -23,6 +26,21 @@
   /* Masquer les diapositives par défaut */
   position: relative;
   /* Position relative pour le positionnement absolu du texte */
+
+  transition: transform 0.3s ease-in-out; /* Transition pour le glissement */
+}
+
+
+.carousel-slide.active {
+  transform: translateX(0); /* Afficher la diapositive active */
+}
+
+.carousel-slide.prev {
+  transform: translateX(-100%); /* Glissement vers la gauche pour la diapositive précédente */
+}
+
+.carousel-slide.next {
+  transform: translateX(100%); /* Glissement vers la droite pour la diapositive suivante */
 }
 
 .slide-content {
@@ -54,4 +72,14 @@ button.prev {
 
 button.next {
   right: 10px;
+}
+
+.modeemploipuces{
+  color:#3DAD5C ;
+  font-size: 3em;
+}
+
+.opacity{
+  color: #3DAD5C;
+  opacity: 0.5;
 }
