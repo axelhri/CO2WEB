@@ -1,69 +1,58 @@
+/* Réinitialisation des marges et des paddings */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style du titre */
 .titreMD {
   padding: 1em;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
+./* Style du conteneur du carrousel */
 .carousel-container {
   position: relative;
-  width: 100%;
+  width: 360px; /* Largeur du carrousel (360px pour un téléphone mobile de 360x800) */
+  height: 400px; /* Hauteur du carrousel */
   overflow: hidden;
-  display: flex;
-  justify-content: center;
+  margin: 0 auto; /* Centrer le carrousel horizontalement */
 }
 
 
+/* Wrapper du carrousel */
 .carousel-wrapper {
   display: flex;
   transition: transform 0.3s ease-in-out;
-  width: 100%;
-    overflow: hidden; /* Masquer les diapositives qui dépassent du conteneur */
+  width: 300%; /* Largeur totale = 3 fois la largeur d'une diapositive */
 }
 
 
+/* Diapositive du carrousel */
 .carousel-slide {
-  flex: 0 0 100%;
-  width: 100%;
-  display: none;
-  /* Masquer les diapositives par défaut */
-  position: relative;
-  /* Position relative pour le positionnement absolu du texte */
-
-  transition: transform 0.3s ease-in-out; /* Transition pour le glissement */
+  flex: 0 0 33.33%; /* Chaque diapositive occupe 33.33% de la largeur (3 diapositives visibles à la fois) */
 }
 
 
-.carousel-slide.active {
-  transform: translateX(0); /* Afficher la diapositive active */
-}
-
-.carousel-slide.prev {
-  transform: translateX(-100%); /* Glissement vers la gauche pour la diapositive précédente */
-}
-
-.carousel-slide.next {
-  transform: translateX(100%); /* Glissement vers la droite pour la diapositive suivante */
-}
-
+/* Contenu de la diapositive */
 .slide-content {
-  position: relative;
   text-align: center;
-  /* Centrer le contenu */
+  padding: 20px;
 }
 
-/* Afficher uniquement la diapositive actuelle */
-.carousel-slide.active {
-  display: block;
-}
 
+/* Style des boutons "Précédent" et "Suivant" */
 button.prev,
 button.next {
-  font-size: xx-large;
   position: absolute;
-  top: 70px;
+  top: 20%; /* Position verticale centrée */
   transform: translateY(-50%);
-  padding: 10px;
+  font-size: 24px;
   background-color: transparent;
   color: #3DAD5C;
   border: none;
+  cursor: pointer;
 }
 
 button.prev {
