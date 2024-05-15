@@ -32,14 +32,12 @@ body, h1, h2, p, ul, li {
 /* Diapositive du carrousel */
 .carousel-slide {
   flex: 0 0 33.33%; /* Chaque diapositive occupe 33.33% de la largeur (3 diapositives visibles à la fois) */
-}
-
-
-/* Contenu de la diapositive */
-.slide-content {
-  text-align: center;
+text-align: center;
   padding: 20px;
 }
+
+
+
 
 
 /* Style des boutons "Précédent" et "Suivant" */
