@@ -157,6 +157,10 @@ nav img {
         display: none;
     }
 
+    li:hover {
+        cursor: pointer;
+    }
+
     .burgerlist {
         background-color: transparent;
         position: sticky;
@@ -172,8 +176,8 @@ nav img {
         justify-content: flex-start;
     }
 
-    li:hover {
-        cursor: pointer;
+    nav li:hover {
+        text-decoration: underline;
     }
 
     }
