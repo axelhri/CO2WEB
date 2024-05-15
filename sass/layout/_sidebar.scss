@@ -1,51 +1,58 @@
+/* Réinitialisation des marges et des paddings */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style du titre */
 .titreMD {
   padding: 1em;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
+/* Style du conteneur du carrousel */
 .carousel-container {
   position: relative;
-  width: 100%;
+  width: 360px; /* Largeur du carrousel (360px pour un téléphone mobile de 360x800) */
+  height: 400px; /* Hauteur du carrousel */
   overflow: hidden;
-  display: flex;
-  justify-content: center;
+  margin: 0 auto; /* Centrer le carrousel horizontalement */
 }
 
 
+/* Wrapper du carrousel */
 .carousel-wrapper {
   display: flex;
   transition: transform 0.3s ease-in-out;
+  width: 300%; /* Largeur totale = 3 fois la largeur d'une diapositive */
 }
 
+
+/* Diapositive du carrousel */
 .carousel-slide {
-  flex: 0 0 100%;
-  width: 100%;
-  display: none;
-  /* Masquer les diapositives par défaut */
-  position: relative;
-  /* Position relative pour le positionnement absolu du texte */
+  flex: 0 0 33.33%; /* Chaque diapositive occupe 33.33% de la largeur (3 diapositives visibles à la fois) */
 }
 
+
+/* Contenu de la diapositive */
 .slide-content {
-  position: relative;
   text-align: center;
-  /* Centrer le contenu */
+  padding: 20px;
 }
 
-/* Afficher uniquement la diapositive actuelle */
-.carousel-slide.active {
-  display: block;
-}
 
+/* Style des boutons "Précédent" et "Suivant" */
 button.prev,
 button.next {
-  font-size: xx-large;
   position: absolute;
-  top: 70px;
+  top: 20%; /* Position verticale centrée */
   transform: translateY(-50%);
-  padding: 10px;
+  font-size: 24px;
   background-color: transparent;
   color: #3DAD5C;
   border: none;
+  cursor: pointer;
 }
 
 button.prev {
@@ -54,4 +61,14 @@ button.prev {
 
 button.next {
   right: 10px;
+}
+
+.modeemploipuces{
+  color:#3DAD5C ;
+  font-size: 3em;
+}
+
+.opacity{
+  color: #3DAD5C;
+  opacity: 0.5;
 }
