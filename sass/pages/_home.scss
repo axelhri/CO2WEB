@@ -41,19 +41,19 @@ a.bouton1:hover {
   text-decoration: wavy;
   width: 75%;
   justify-content: center;
+  transition: 500ms;
 
 }
 
 a.bouton2:hover {
   background: #019961;
   color: white;
+  transition: 500ms;
 }
 
 .ou {
   display: flex;
-  position: absolute;
-  bottom: 32.2%;
-  right: 45%;
+  justify-content: center;
 }
 
 .imagegreen {
