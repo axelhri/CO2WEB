@@ -1,0 +1,27 @@
+#sliderapropos1{
+    display: flex;
+    width: 360px;
+    height: 150px;
+    position: relative;
+    margin: auto;
+}
+
+#precedent, #suivant {
+    position: absolute;
+    font-size: 50px;
+    top: 50px;
+    color: #019961;
+    cursor: pointer;
+}
+
+#precedent{
+    left: 0;
+}
+
+#suivant{
+    right: 0;
+}
+
+
+
+

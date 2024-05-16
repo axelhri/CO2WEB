@@ -1,6 +1,15 @@
+/* Réinitialisation des marges et des paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Inclure les bordures et le padding dans le calcul de la largeur */
+}
+
+
 /* Style du titre */
 .titreMD {
   padding: 1em;
+  font-family: 'Roboto', sans-serif;
   font-family: "Montserrat", sans-serif;
   font-size: 27px;
   font-weight: 600;
@@ -26,14 +35,17 @@
 
 /* Diapositive du carrousel */
 .carousel-slide {
-  flex: 0 0 100%; /* Chaque diapositive occupe 100% de la largeur */
-  width: 100%;
-  text-align: center;
+  flex: 0 0 33.33%; /* Chaque diapositive occupe 33.33% de la largeur (3 diapositives visibles à la fois) */
 }
 
-.pcver {
-  display: none;
+
+/* Contenu de la diapositive */
+.slide-content {
+  text-align: center;
+  padding: 20px;
 }
+
+
 
 
 /* Style des boutons "Précédent" et "Suivant" */
@@ -54,7 +66,7 @@ button.prev {
 }
 
 button.next {
-  right: 10px;
+  right: 20px;
 }
 
 .modeemploipuces{
