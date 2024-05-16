@@ -52,7 +52,7 @@
 button.prev,
 button.next {
   position: absolute;
-  top: 20%; /* Position verticale centrée */
+  top: 40%; /* Position verticale centrée */
   transform: translateY(-50%);
   font-size: 24px;
   background-color: transparent;
@@ -69,9 +69,10 @@ button.next {
   right: 20px;
 }
 
-.modeemploipuces{
-  color:#3DAD5C ;
-  font-size: 3em;
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .puces {
