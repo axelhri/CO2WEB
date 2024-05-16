@@ -1,18 +1,25 @@
-.titleapropos{
+#sliderapropos1{
     display: flex;
+    width: 360px;
+    height: 150px;
     position: relative;
-    top:10%;
-    left: 10%;
+    margin: auto;
 }
 
-.imagegreen2{
-    display: flex;
-    width: 5px;
-    height: 100px;
+#precedent, #suivant {
+    position: absolute;
+    font-size: 50px;
+    top: 50px;
+    color: #019961;
+    cursor: pointer;
 }
-.paragraphegreen2{
-display: flex;
-margin-bottom: 70%;
+
+#precedent{
+    left: 0;
+}
+
+#suivant{
+    right: 0;
 }
 
 
