@@ -1,14 +1,9 @@
-/* Réinitialisation des marges et des paddings */
-body, h1, h2, p, ul, li {
-  margin: 0;
-  padding: 0;
-}
-
 /* Style du titre */
 .titreMD {
   padding: 1em;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 27px;
+  font-weight: 600;
 }
 
 /* Style du conteneur du carrousel */
@@ -18,27 +13,26 @@ body, h1, h2, p, ul, li {
   height: 400px; /* Hauteur du carrousel */
   overflow: hidden;
   margin: 0 auto; /* Centrer le carrousel horizontalement */
+  display: block;
 }
 
 
-/* Wrapper du carrousel */
+//* Wrapper du carrousel */
 .carousel-wrapper {
   display: flex;
   transition: transform 0.3s ease-in-out;
-  width: 300%; /* Largeur totale = 3 fois la largeur d'une diapositive */
+  width: 100%; /* Largeur totale = 100% de la largeur du conteneur */
 }
-
 
 /* Diapositive du carrousel */
 .carousel-slide {
-  flex: 0 0 33.33%; /* Chaque diapositive occupe 33.33% de la largeur (3 diapositives visibles à la fois) */
+  flex: 0 0 100%; /* Chaque diapositive occupe 100% de la largeur */
+  width: 100%;
+  text-align: center;
 }
 
-
-/* Contenu de la diapositive */
-.slide-content {
-  text-align: center;
-  padding: 20px;
+.pcver {
+  display: none;
 }
 
 
@@ -68,7 +62,272 @@ button.next {
   font-size: 3em;
 }
 
+.puces {
+  font-size: 1em;
+}
+
 .opacity{
   color: #3DAD5C;
   opacity: 0.5;
 }
+
+.carousel-container h2, h3, h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.carousel-container p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+// Tablette
+
+@media screen and (min-width: 768px)  {
+
+.carousel-container {
+  padding-bottom: 3em;
+}
+
+.titreMD {
+  padding-bottom: 4em;
+  padding-top: 2em;
+  text-align: center;
+}
+  }
+
+              // Notebook
+
+@media screen and (min-width: 1336px) {
+  .titreMD {
+    padding-bottom: 1em;
+    padding-top: 1em;
+    text-align: left;
+    width: 20%;
+    font-size: 35px;
+    margin-left: 6%;
+  }
+
+  .carousel-container {
+    display: none;
+  }
+
+  .pcver {
+    display: block;
+  }
+
+  .pcmdp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 3em;
+  }
+
+  .pcmdp1, .pcmdp2, .pcmdp3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 18em;
+    width: 20em;
+    padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .pcmdp img {
+    width: 8em;
+  }
+  .pcmdp2 img, .pcmdp3 img {
+    height: 8em;
+  }
+
+  .pcmdp p {
+    width: 90%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 350;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .pcmdp2 {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.116);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .pcmdp1 h5, h6, h7 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+
+  .linearcircle {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 140px;
+    height: 140px;
+    background: linear-gradient(to bottom right, #B5D653, #79C258, #019961);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle1 {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.circle2 {
+  position: absolute;
+  top: 25%;
+  left: 59.5%;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color:  #019961;
+}
+
+.circle3 {
+  position: absolute;
+  top: 33%;
+  left: 67%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color:  #B5D653;
+}
+
+.circle4 {
+  position: absolute;
+  top: 40%;
+  left: 64%;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color:  #79C258;
+}
+
+.circle5 {
+  position: absolute;
+  top: 73%;
+  left: 34%;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color:  #B5D653;
+}
+
+.circle6 {
+  position: absolute;
+  top: 81.5%;
+  left: 41%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color:  #79C258;
+}
+
+.circle7 {
+  position: absolute;
+  top: 86%;
+  left: 38%;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color:  #019961;
+}
+
+  }
+
+                 // Desktop
+
+                 @media screen and (min-width: 1920px) {
+
+                  .titreMD {
+                    padding-bottom: 1em;
+                    padding-top: 1em;
+                    text-align: left;
+                    width: 20%;
+                    font-size: 35px;
+                    margin-left: 6%;
+                  }
+
+                  .circles {
+                    padding-bottom: 10em;
+                  }
+                
+                .circle2 {
+                  position: absolute;
+                  top: 20%;
+                  left: 56.5%;
+                  width: 90px;
+                  height: 90px;
+                  border-radius: 50%;
+                  background-color:  #019961;
+                }
+                
+                .circle3 {
+                  position: absolute;
+                  top: 27%;
+                  left: 62%;
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  background-color:  #B5D653;
+                }
+                
+                .circle4 {
+                  position: absolute;
+                  top: 34%;
+                  left: 61%;
+                  width: 18px;
+                  height: 18px;
+                  border-radius: 50%;
+                  background-color:  #79C258;
+                }
+                
+                .circle5 {
+                  position: absolute;
+                  top: 59%;
+                  left: 39%;
+                  width: 90px;
+                  height: 90px;
+                  border-radius: 50%;
+                  background-color:  #B5D653;
+                }
+                
+                .circle6 {
+                  position: absolute;
+                  top: 66%;
+                  left: 44%;
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  background-color:  #79C258;
+                }
+                
+                .circle7 {
+                  position: absolute;
+                  top: 70%;
+                  left: 42%;
+                  width: 18px;
+                  height: 18px;
+                  border-radius: 50%;
+                  background-color:  #019961;
+                }
+  
+                  }
