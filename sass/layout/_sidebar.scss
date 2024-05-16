@@ -32,10 +32,16 @@
 
 /* Diapositive du carrousel */
 .carousel-slide {
-  flex: 0 0 33.33%; /* Chaque diapositive occupe 33.33% de la largeur (3 diapositives visibles à la fois) */
+  flex: 0 0 33.33%;
   text-align: center;
-  padding: 20px;
+  padding: 2em; /* Réinitialiser le padding */
+  margin: 0em; /* Réinitialiser les marges */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .carousel-slide img{
   width: 137px;
