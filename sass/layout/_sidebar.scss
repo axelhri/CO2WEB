@@ -55,7 +55,7 @@
 button.prev,
 button.next {
   position: absolute;
-  top: 20%; /* Position verticale centrée */
+  top: 40%; /* Position verticale centrée */
   transform: translateY(-50%);
   font-size: 24px;
   background-color: transparent;
@@ -72,12 +72,23 @@ button.next {
   right: 20px;
 }
 
-.modeemploipuces{
-  color:#3DAD5C ;
-  font-size: 3em;
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
-.opacity{
-  color: #3DAD5C;
-  opacity: 0.5;
+.indicator {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #019961;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: #019961;
+  opacity: 1;
 }
