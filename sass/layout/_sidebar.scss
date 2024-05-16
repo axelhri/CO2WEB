@@ -1,13 +1,14 @@
 /* Réinitialisation des marges et des paddings */
-body, h1, h2, p, ul, li {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* Inclure les bordures et le padding dans le calcul de la largeur */
 }
+
 
 /* Style du titre */
 .titreMD {
   padding: 1em;
-  text-align: center;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -32,10 +33,14 @@ body, h1, h2, p, ul, li {
 /* Diapositive du carrousel */
 .carousel-slide {
   flex: 0 0 33.33%; /* Chaque diapositive occupe 33.33% de la largeur (3 diapositives visibles à la fois) */
-text-align: center;
+  text-align: center;
   padding: 20px;
 }
 
+.carousel-slide img{
+  width: 137px;
+  height: 132px;
+}
 
 
 
@@ -58,7 +63,7 @@ button.prev {
 }
 
 button.next {
-  right: 10px;
+  right: 20px;
 }
 
 .modeemploipuces{
