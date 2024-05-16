@@ -1,19 +1,18 @@
 .titleapropos{
     display: flex;
-    position: absolute;
+    position: relative;
     top:10%;
-    left: 80%;
+    left: 10%;
 }
 
 .imagegreen2{
     display: flex;
     width: 5px;
     height: 100px;
-
+}
+.paragraphegreen2{
+display: flex;
+margin-bottom: 70%;
 }
 
-.paragrapheapropos{
-    display: flex;
-    position: relative;
-    bottom: 50%;
-}
+
