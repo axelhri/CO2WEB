@@ -16,8 +16,9 @@
 
 #precedent, #suivant {
     cursor: pointer;
+    display: flex;
     position: absolute;
-    top: 50%;
+    top: 30%;
     transform: translateY(-50%);
     color:#019961 ;
     padding: 0;
@@ -27,6 +28,9 @@
 }
 
 #precedent {
+    display: flex;
+    position: absolute;
+    top: 25%;
     left: 0;
 }
 
