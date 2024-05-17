@@ -29,4 +29,3 @@ function changeSlide(direction) {
 
 // Initialize the slider
 updateSlide();
-

@@ -1,30 +1,19 @@
-.sliderapropos {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-}
-
-#sliderapropos1 img {
-    width: 100%;
-    display: none;
-}
-
-#sliderapropos1 img.active {
-    display: block;
+#sliderapropos1{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 150px;
+    position: sticky;
+    margin-bottom: 300px;
+    left: 10%;
 }
 
 #precedent, #suivant {
-    cursor: pointer;
-    display: flex;
     position: absolute;
-    top: 30%;
-    transform: translateY(-50%);
-    color:#019961 ;
-    padding: 0;
-    border: none;
-    font-size: 60px;
-    
+    font-size: 50px;
+    top: 50px;
+    color: #019961;
+    cursor: pointer;
 }
 
 #precedent {
@@ -32,14 +21,9 @@
     position: absolute;
     top: 23%;
     left: 0;
+    top: 37%;
 }
 
 #suivant {
     right: 0;
 }
-
-
-
-
-
-
