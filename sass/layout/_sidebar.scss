@@ -1,15 +1,12 @@
-/* Réinitialisation des marges et des paddings */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* Inclure les bordures et le padding dans le calcul de la largeur */
 }
 
-
 /* Style du titre */
 .titreMD {
   padding: 1em;
-  font-family: 'Roboto', sans-serif;
   font-family: "Montserrat", sans-serif;
   font-size: 27px;
   font-weight: 600;
@@ -30,19 +27,29 @@
 .carousel-wrapper {
   display: flex;
   transition: transform 0.3s ease-in-out;
-  width: 100%; /* Largeur totale = 100% de la largeur du conteneur */
+  width: 300%; /* Largeur totale = 100% de la largeur du conteneur */
 }
 
 /* Diapositive du carrousel */
 .carousel-slide {
-  flex: 0 0 33.33%; /* Chaque diapositive occupe 33.33% de la largeur (3 diapositives visibles à la fois) */
+  flex: 0 0 33.33%;
+  text-align: center;
+  padding: 2em; /* Réinitialiser le padding */
+  margin: 0em; /* Réinitialiser les marges */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pcver {
+  display: none;
 }
 
 
-/* Contenu de la diapositive */
-.slide-content {
-  text-align: center;
-  padding: 20px;
+.carousel-slide img{
+  width: 137px;
+  height: 132px;
 }
 
 
@@ -69,21 +76,6 @@ button.next {
   right: 20px;
 }
 
-.carousel-indicators {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.puces {
-  font-size: 1em;
-}
-
-.opacity{
-  color: #3DAD5C;
-  opacity: 0.5;
-}
-
 .carousel-container h2, h3, h4 {
   font-family: "Montserrat", sans-serif;
   font-size: 27px;
@@ -98,16 +90,37 @@ button.next {
     margin-right: 5%;
 }
 
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #019961;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: #019961;
+  opacity: 1;
+}
+
 // Tablette
 
 @media screen and (min-width: 768px)  {
 
 .carousel-container {
-  padding-bottom: 3em;
+  padding-bottom: 30em;
 }
 
 .titreMD {
-  padding-bottom: 4em;
+  padding-bottom: 2em;
   padding-top: 2em;
   text-align: center;
 }
@@ -125,12 +138,22 @@ button.next {
     margin-left: 6%;
   }
 
+  .carousel-indicators {
+    display: none;
+  }
+
+  .prev, .next {
+    display: none;
+  }
+
+
   .carousel-container {
     display: none;
   }
 
   .pcver {
     display: block;
+    padding-bottom: 2em;
   }
 
   .pcmdp {
