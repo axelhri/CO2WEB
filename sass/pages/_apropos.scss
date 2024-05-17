@@ -1,9 +1,11 @@
 #sliderapropos1{
     display: flex;
-    width: 360px;
+    flex-direction: column;
+    width: 250px;
     height: 150px;
-    position: relative;
-    margin: auto;
+    position: sticky;
+    margin-bottom: 300px;
+    left: 10%;
 }
 
 #precedent, #suivant {
@@ -21,6 +23,8 @@
 #suivant{
     right: 0;
 }
+
+
 
 
 
