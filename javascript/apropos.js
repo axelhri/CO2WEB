@@ -4,5 +4,6 @@ function ChangeSlide() {
 
 function ChangeAutreSlide() {
     document.getElementById("slideapropos2").src = "images/Groupe40.svg";
+    
 }
 
