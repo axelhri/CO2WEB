@@ -1,7 +1,10 @@
 let currentSlideIndex = 0;
-const slides = document.querySelectorAll('.carousel-slide');
-const slideWidth = slides[0].clientWidth;
-const totalSlides = slides.length;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const slideWidth = slides[0].clientWidth;
+        const totalSlides = slides.length;
+        const carouselWrapper = document.querySelector('.carousel-wrapper');
+        const prevButton = document.querySelector('.prev-button');
+        const nextButton = document.querySelector('.next-button');
 
 // Fonction pour afficher une diapositive spécifique
 function showSlide(index) {
