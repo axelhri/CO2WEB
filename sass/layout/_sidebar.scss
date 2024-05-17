@@ -128,9 +128,9 @@ button.next {
 
               // Notebook
 
-@media screen and (min-width: 1336px) {
+@media screen and (min-width: 1366px) {
   .titreMD {
-    padding-bottom: 1em;
+    padding-bottom: 0em;
     padding-top: 1em;
     text-align: left;
     width: 20%;
@@ -153,14 +153,14 @@ button.next {
 
   .pcver {
     display: block;
-    padding-bottom: 2em;
+    padding-bottom: 3em;
   }
 
   .pcmdp {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-bottom: 3em;
+    padding-bottom: 5em;
   }
 
   .pcmdp1, .pcmdp2, .pcmdp3 {
@@ -168,7 +168,6 @@ button.next {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 18em;
     width: 20em;
     padding: 20px;
     padding-top: 60px;
@@ -178,8 +177,9 @@ button.next {
   .pcmdp img {
     width: 8em;
   }
-  .pcmdp2 img, .pcmdp3 img {
-    height: 8em;
+  .pcmdp2 img, .pcmdp3 img, .pcmdp img {
+    width: 137px;
+    height: 132px;
   }
 
   .pcmdp p {
@@ -197,12 +197,14 @@ button.next {
     position: relative;
     overflow: hidden;
     z-index: 1;
+    height: 25em;
   }
 
   .pcmdp1 h5, h6, h7 {
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     font-weight: 600;
+    text-align: center;
   }
 
 
@@ -229,8 +231,8 @@ button.next {
 
 .circle2 {
   position: absolute;
-  top: 25%;
-  left: 59.5%;
+  top: 20%;
+  left: 58%;
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -239,8 +241,8 @@ button.next {
 
 .circle3 {
   position: absolute;
-  top: 33%;
-  left: 67%;
+  top: 26%;
+  left: 66%;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -249,8 +251,8 @@ button.next {
 
 .circle4 {
   position: absolute;
-  top: 40%;
-  left: 64%;
+  top: 32%;
+  left: 63%;
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -259,8 +261,8 @@ button.next {
 
 .circle5 {
   position: absolute;
-  top: 73%;
-  left: 34%;
+  top: 56%;
+  left: 35%;
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -269,8 +271,8 @@ button.next {
 
 .circle6 {
   position: absolute;
-  top: 81.5%;
-  left: 41%;
+  top: 61%;
+  left: 43%;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -279,8 +281,8 @@ button.next {
 
 .circle7 {
   position: absolute;
-  top: 86%;
-  left: 38%;
+  top: 65%;
+  left: 40%;
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -295,7 +297,7 @@ button.next {
 
                   .titreMD {
                     padding-bottom: 1em;
-                    padding-top: 1em;
+                    padding-top: 2em;
                     text-align: left;
                     width: 20%;
                     font-size: 35px;
@@ -308,8 +310,8 @@ button.next {
                 
                 .circle2 {
                   position: absolute;
-                  top: 20%;
-                  left: 56.5%;
+                  top: 24%;
+                  left: 56%;
                   width: 90px;
                   height: 90px;
                   border-radius: 50%;
@@ -328,8 +330,8 @@ button.next {
                 
                 .circle4 {
                   position: absolute;
-                  top: 34%;
-                  left: 61%;
+                  top: 36%;
+                  left: 59%;
                   width: 18px;
                   height: 18px;
                   border-radius: 50%;
@@ -338,8 +340,8 @@ button.next {
                 
                 .circle5 {
                   position: absolute;
-                  top: 59%;
-                  left: 39%;
+                  top: 62.5%;
+                  left: 39.5%;
                   width: 90px;
                   height: 90px;
                   border-radius: 50%;
@@ -348,8 +350,8 @@ button.next {
                 
                 .circle6 {
                   position: absolute;
-                  top: 66%;
-                  left: 44%;
+                  top: 69%;
+                  left: 45%;
                   width: 40px;
                   height: 40px;
                   border-radius: 50%;
@@ -358,12 +360,23 @@ button.next {
                 
                 .circle7 {
                   position: absolute;
-                  top: 70%;
-                  left: 42%;
+                  top: 74%;
+                  left: 43%;
                   width: 18px;
                   height: 18px;
                   border-radius: 50%;
                   background-color:  #019961;
+                }
+
+                .pcver {
+                  padding-bottom: 0em;
+                }
+
+                .pcmdp {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-evenly;
+                  padding-bottom: 2em;
                 }
   
                   }
