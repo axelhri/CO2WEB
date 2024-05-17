@@ -211,6 +211,7 @@ a.bouton2:hover {
     flex-direction: column;
     margin-left: 5%;
     margin: 5em;
+    padding-bottom: 0em;
   }
   
 
@@ -252,8 +253,10 @@ a.bouton2:hover {
     font-weight: bold;
     font-size: 20px;
     cursor: pointer;
-    width: 10%;
+    width: 20%;
     margin-left: 5%;
+    justify-content: center;
+    align-items: center;
     
   
   
@@ -269,9 +272,11 @@ a.bouton2:hover {
     font-weight: bold;
     font-size: 20px;
     cursor: pointer;
-    width: 10%;
+    width: 20%;
     transition: 500ms;
     margin-left: 2%;
+    justify-content: center;
+    align-items: center;
   
   }
 
@@ -288,6 +293,23 @@ a.bouton2:hover {
     
   }
 }
+
+        // Desktop
+
+        @media screen and (min-width: 1920px) {
+          .imagegreen {
+            display: flex;
+            width:52em;
+            justify-content: flex-end;
+            flex-direction: row;
+            position: relative;
+            left: 0;
+          }
+        
+
+          
+          
+          }
 
 
 
