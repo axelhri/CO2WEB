@@ -1,31 +1,38 @@
-#sliderapropos1{
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    height: 150px;
-    position: sticky;
-    margin-bottom: 300px;
-    left: 10%;
+.sliderapropos {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+#sliderapropos1 img {
+    width: 100%;
+    display: none;
+}
+
+#sliderapropos1 img.active {
+    display: block;
 }
 
 #precedent, #suivant {
-    position: absolute;
-    font-size: 50px;
-    top: 50px;
-    color: #019961;
     cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+    z-index: 10;
 }
 
-#precedent{
+#precedent {
     left: 0;
+    top: 37%;
 }
 
-#suivant{
+#suivant {
     right: 0;
 }
-
-
-
-
-
-
