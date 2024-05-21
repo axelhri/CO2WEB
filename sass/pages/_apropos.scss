@@ -16,16 +16,24 @@
     cursor: pointer;
 }
 
+.paragrapheapropos1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    padding-top: 3em;
+}
+
 #precedent {
     display: flex;
     position: absolute;
-    top: 23%;
-    left: 0;
-    top: 37%;
+    top: -2.2EM;
+    right: 5em;
 }
 
 #suivant {
-    right: 0;
+    top: -2.2EM;
+    left: 5.5em;
 }
 
 .titleapropos {
@@ -50,9 +58,17 @@
     width: 70%;
 }
 
-.sliderapropos1 img {
+#slideapropos2 {
     position: absolute;
-    top: 18%;
+    top: -60%;
+    width: 80%;
+}
+
+#slideapropos3 {
+    position: absolute;
+    top: -80%;
+    left: 6EM;
+    width: 80%;
 }
 
 
