@@ -1,10 +1,8 @@
 #sliderapropos1{
-    display: flex;
-    flex-direction: column;
     width: 250px;
     height: 150px;
     position: sticky;
-    margin-bottom: 300px;
+    margin-bottom: 200px;
     left: 10%;
 }
 
@@ -22,7 +20,15 @@
     font-style: normal;
     font-size: 18px;
     padding-top: 3em;
-    width: 95%;
+}
+
+.lorem {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    margin-left: 35px;
+    margin-top: 10px;
 }
 
 #precedent {
@@ -38,9 +44,33 @@
 }
 
 
+.parbar {
+    background: #019961;
+    width: 100px;
+    height: 2px;
+    margin-left: 35px;
+}
 
 .titleapropos {
     padding-bottom: 2em;
+    font-family: "Montserrat", sans-serif;
+    font-size: 27px;
+    font-weight: 550;
+    margin-left: 20px;
+}
+
+#intpc {
+    position: absolute;
+    width: 77%;
+    top: -5px;
+    left: 18.9%;
+}
+
+.pcic {
+    position: absolute;
+    width: 100%;
+    top: -10PX;
+    left: 7%;
 }
 
 .Z {      

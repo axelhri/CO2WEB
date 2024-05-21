@@ -1,5 +1,5 @@
 let currentSlide = 0;
-const slides = document.querySelectorAll('#sliderapropos1 img');
+const slides = document.querySelectorAll('#slideapropos2, #slideapropos3');
 const prevButton = document.getElementById('precedent');
 const nextButton = document.getElementById('suivant');
 
