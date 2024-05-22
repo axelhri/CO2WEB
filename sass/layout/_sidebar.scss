@@ -241,8 +241,8 @@ button.next {
 
 .circle3 {
   position: absolute;
-  top: 26%;
-  left: 66%;
+  top: 32%;
+  left: 65%;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -251,7 +251,7 @@ button.next {
 
 .circle4 {
   position: absolute;
-  top: 32%;
+  top: 39%;
   left: 63%;
   width: 18px;
   height: 18px;
@@ -261,7 +261,7 @@ button.next {
 
 .circle5 {
   position: absolute;
-  top: 56%;
+  top: 80%;
   left: 35%;
   width: 90px;
   height: 90px;
@@ -271,7 +271,7 @@ button.next {
 
 .circle6 {
   position: absolute;
-  top: 61%;
+  top: 90%;
   left: 43%;
   width: 40px;
   height: 40px;
@@ -281,12 +281,17 @@ button.next {
 
 .circle7 {
   position: absolute;
-  top: 65%;
+  top: 95%;
   left: 40%;
   width: 18px;
   height: 18px;
   border-radius: 50%;
   background-color:  #019961;
+}
+
+.mainmdp {
+  height: 38em;
+  transform: translate(0%, 0%);
 }
 
   }
@@ -310,7 +315,7 @@ button.next {
                 
                 .circle2 {
                   position: absolute;
-                  top: 24%;
+                  top: 18%;
                   left: 56%;
                   width: 90px;
                   height: 90px;
@@ -321,7 +326,7 @@ button.next {
                 .circle3 {
                   position: absolute;
                   top: 27%;
-                  left: 62%;
+                  left: 61%;
                   width: 40px;
                   height: 40px;
                   border-radius: 50%;
@@ -330,7 +335,7 @@ button.next {
                 
                 .circle4 {
                   position: absolute;
-                  top: 36%;
+                  top: 34%;
                   left: 59%;
                   width: 18px;
                   height: 18px;
@@ -340,7 +345,7 @@ button.next {
                 
                 .circle5 {
                   position: absolute;
-                  top: 62.5%;
+                  top: 64.5%;
                   left: 39.5%;
                   width: 90px;
                   height: 90px;
@@ -350,7 +355,7 @@ button.next {
                 
                 .circle6 {
                   position: absolute;
-                  top: 69%;
+                  top: 71%;
                   left: 45%;
                   width: 40px;
                   height: 40px;
@@ -360,7 +365,7 @@ button.next {
                 
                 .circle7 {
                   position: absolute;
-                  top: 74%;
+                  top: 77%;
                   left: 43%;
                   width: 18px;
                   height: 18px;
@@ -378,5 +383,10 @@ button.next {
                   justify-content: space-evenly;
                   padding-bottom: 2em;
                 }
+
+                .mainmdp {
+                  height: 50em;
+                  transform: translate(0%, 0%);
+              }
   
                   }
