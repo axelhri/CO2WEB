@@ -4,6 +4,7 @@
     position: sticky;
     margin-bottom: 200px;
     left: 10%;
+    transition: transform 0.5s ease-in-out;
 }
 
 #precedent, #suivant {
@@ -99,6 +100,8 @@
     top: -60%;
     width: 80%;
     left: -15%;
+    transition: transform 0.5s ease-in-out;
+    
 }
 
 #slideapropos3 {
@@ -111,6 +114,51 @@
 .paragrapheapropos2 {
     font-family: "Montserrat", sans-serif;
 }
+
+.slide-active {
+    left: 0;
+    transform: translateX(0); /* Position de la diapositive active */
+    display: block;
+    
+}
+
+.slide-prev {
+    left: -100%;
+    transform: translateX(100%);
+    display: none;
+}
+
+.slide-next {
+    left: 100%;
+    transform: translateX(-100%);
+    display: none;
+}
+
+.sliderapropos1 {
+position: relative;
+width: 100%;
+height: 100%;
+overflow: hidden;
+transition: transform 0.5s ease-in-out;
+}
+
+.slidetexte2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    top: 0;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
 
 
 
