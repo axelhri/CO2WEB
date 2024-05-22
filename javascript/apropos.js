@@ -1,13 +1,21 @@
 let currentSlide = 0;
-const slides = document.querySelectorAll('#slideapropos2, #slideapropos3');
+const slides = document.querySelectorAll('#slideapropos2, #slideapropos3, .slidetexte2');
 const prevButton = document.getElementById('precedent');
 const nextButton = document.getElementById('suivant');
 
 function updateSlide() {
     slides.forEach((slide, index) => {
-        slide.style.display = 'none';
+        slide.classList.remove('slide-active', 'slide-prev', 'slide-next');
+        slide.style.display = 'none'; // Cacher toutes les diapositives par défaut
+        
+
         if (index === currentSlide) {
-            slide.style.display = 'block';
+            slide.classList.add('slide-active');
+            slide.style.display = 'block'; // Afficher la diapositive active
+        } else if (index < currentSlide) {
+            slide.classList.add('slide-prev');
+        } else {
+            slide.classList.add('slide-next');
         }
     });
     
@@ -24,9 +32,12 @@ function changeSlide(direction) {
     } else if (currentSlide >= slides.length) {
         currentSlide = slides.length - 1;
     }
+    
 
     updateSlide();
 }
 
 // Initialize the slider
 updateSlide();
+
+
