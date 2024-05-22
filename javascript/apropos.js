@@ -1,5 +1,5 @@
 let currentSlide = 0;
-const slides = document.querySelectorAll('#slideapropos2, #slideapropos3, .slidetexte2');
+const slides = document.querySelectorAll('.slidetexte1, .slidetexte2');
 const prevButton = document.getElementById('precedent');
 const nextButton = document.getElementById('suivant');
 
@@ -7,7 +7,6 @@ function updateSlide() {
     slides.forEach((slide, index) => {
         slide.classList.remove('slide-active', 'slide-prev', 'slide-next');
         slide.style.display = 'none'; // Cacher toutes les diapositives par défaut
-        
 
         if (index === currentSlide) {
             slide.classList.add('slide-active');
@@ -18,7 +17,6 @@ function updateSlide() {
             slide.classList.add('slide-next');
         }
     });
-    
 
     prevButton.style.display = currentSlide === 0 ? 'none' : 'block';
     nextButton.style.display = currentSlide === slides.length - 1 ? 'none' : 'block';
@@ -32,12 +30,9 @@ function changeSlide(direction) {
     } else if (currentSlide >= slides.length) {
         currentSlide = slides.length - 1;
     }
-    
 
     updateSlide();
 }
 
 // Initialize the slider
 updateSlide();
-
-

@@ -1,13 +1,16 @@
-#sliderapropos1{
+#sliderapropos1 {
+    
     width: 250px;
     height: 150px;
     position: sticky;
     margin-bottom: 200px;
     left: 10%;
     transition: transform 0.5s ease-in-out;
+    
 }
 
-#precedent, #suivant {
+#precedent,
+#suivant {
     position: absolute;
     font-size: 50px;
     top: 50px;
@@ -76,7 +79,7 @@
     left: 15%;
 }
 
-.Z {      
+.Z {
     background: linear-gradient(to bottom right, #a8e063, #56ab2f);
     border-top-right-radius: 500px;
     border-bottom-right-radius: 500px;
@@ -100,15 +103,13 @@
     top: -60%;
     width: 80%;
     left: -15%;
-    
+    transform: translate(0%);
+
 }
 
-#slideapropos3 {
-    position: absolute;
-    top: -80%;
-    left: 6EM;
-    width: 80%;
-}
+
+    
+
 
 .paragrapheapropos2 {
     font-family: "Montserrat", sans-serif;
@@ -116,9 +117,10 @@
 
 .slide-active {
     left: 0;
-    transform: translateX(0); /* Position de la diapositive active */
+    transform: translateX(0);
+    /* Position de la diapositive active */
     display: block;
-    
+
 }
 
 .slide-prev {
@@ -134,11 +136,25 @@
 }
 
 .sliderapropos1 {
-position: relative;
-width: 100%;
-height: 100%;
-overflow: hidden;
-transition: transform 0.5s ease-in-out;
+    
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.slidetexte1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    top: 0;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .slidetexte2 {
@@ -151,16 +167,7 @@ transition: transform 0.5s ease-in-out;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transform: translate(10%);
 }
-
-
-
-
-
-
-
-
-
-
 
 
