@@ -18,6 +18,7 @@ function updateSlide() {
             slide.classList.add('slide-next');
         }
     });
+    
 
     prevButton.style.display = currentSlide === 0 ? 'none' : 'block';
     nextButton.style.display = currentSlide === slides.length - 1 ? 'none' : 'block';

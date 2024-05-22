@@ -5,8 +5,8 @@
 }
 
 .velibmain {
-    padding-top: 9em;
-    padding-bottom: 2em;
+    height: 33em;
+    transform: translate(0%, 30%);
 }
 
 .countdown div {
@@ -76,7 +76,8 @@
 
 @media screen and (min-width: 768px) {
     .velibmain {
-        padding-bottom: 20em;
+        height: 45em;
+        transform: translate(0%, 30%);
     }
 
 
@@ -87,7 +88,8 @@
 @media screen and (min-width: 1336px) {
 
     .velibmain {
-        padding-bottom: 12em;
+        height: 38em;
+        transform: translate(0%, 30%);
     }
     }
 
@@ -95,8 +97,8 @@
 
             @media screen and (min-width: 1920px) {
                 .velibmain {
-                    padding-top: 18em;
-                    padding-bottom: 14em;
+                    height: 50em;
+                    transform: translate(0%, 30%);
                 }
 
                 }
