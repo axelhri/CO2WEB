@@ -120,7 +120,7 @@
     left: 6%;
 }
 
-.Z {      
+.Z {
     background: linear-gradient(to bottom right, #a8e063, #56ab2f);
     border-top-right-radius: 500px;
     border-bottom-right-radius: 500px;
@@ -138,4 +138,9 @@
 #slide2{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translate(10%);
 }
+
+
