@@ -1,43 +1,53 @@
 let currentSlide = 0;
-const slides = document.querySelectorAll('#slideapropos2, #slideapropos3, .slidetexte2');
-const prevButton = document.getElementById('precedent');
-const nextButton = document.getElementById('suivant');
-
-function updateSlide() {
-    slides.forEach((slide, index) => {
-        slide.classList.remove('slide-active', 'slide-prev', 'slide-next');
-        slide.style.display = 'none'; // Cacher toutes les diapositives par défaut
-        
-
-        if (index === currentSlide) {
-            slide.classList.add('slide-active');
-            slide.style.display = 'block'; // Afficher la diapositive active
-        } else if (index < currentSlide) {
-            slide.classList.add('slide-prev');
-        } else {
-            slide.classList.add('slide-next');
-        }
-    });
-    
-
-    prevButton.style.display = currentSlide === 0 ? 'none' : 'block';
-    nextButton.style.display = currentSlide === slides.length - 1 ? 'none' : 'block';
-}
-
-function changeSlide(direction) {
-    currentSlide += direction;
-
-    if (currentSlide < 0) {
-        currentSlide = 0;
-    } else if (currentSlide >= slides.length) {
-        currentSlide = slides.length - 1;
-    }
-    
-
-    updateSlide();
-}
+const slides = document.querySelectorAll('.slide');
+const leftBtn = document.getElementById('leftBtn');
+const rightBtn = document.getElementById('rightBtn');
 
 // Initialize the slider
-updateSlide();
+showSlide(currentSlide, 'none'); // Utiliser 'none' comme direction pour éviter le déplacement initial
 
+function showSlide(index, direction) {
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active', 'incoming-left', 'incoming-right');
+        if (i === index) {
+            slide.classList.add('active');
+            slide.style.left = '0';
+        } else if (direction === 'right' && i < index) { // Déplacer vers la droite les diapositives précédentes
+            slide.style.left = '-100%';
+        } else if (direction === 'left' && i > index) { // Déplacer vers la gauche les diapositives suivantes
+            slide.style.left = '100%';
+        } else {
+            slide.style.left = '100%'; // Par défaut, positionner toutes les diapositives à droite pour éviter le croisement initial
+        }
+    });
 
+    if (direction === 'left') {
+        slides[index].classList.add('incoming-left');
+    } else if (direction === 'right') {
+        slides[index].classList.add('incoming-right');
+    }
+}
+
+function slideLeft() {
+    if (currentSlide > 0) {
+        currentSlide--;
+        showSlide(currentSlide, 'left');
+    }
+    toggleButtons();
+}
+
+function slideRight() {
+    if (currentSlide < slides.length - 1) {
+        currentSlide++;
+        showSlide(currentSlide, 'right');
+    }
+    toggleButtons();
+}
+
+function toggleButtons() {
+    leftBtn.disabled = currentSlide === 0;
+    rightBtn.disabled = currentSlide === slides.length - 1;
+}
+
+document.querySelector('.slider-container').addEventListener('mouseover', () => toggleButtons(true));
+document.querySelector('.slider-container').addEventListener('mouseout', () => toggleButtons(false));
