@@ -54,6 +54,9 @@
     margin-top: auto;
     font-size: 18px;
     opacity: 1; /* Ensure the text is always visible */
+    padding-top: 5em;
+    text-align: justify;
+    padding: 1em;
   }
   
 
@@ -94,6 +97,7 @@
     width: 100px;
     height: 2px;
     margin-left: 35px;
+    margin-top: 1em;
     
 }
 
@@ -103,7 +107,7 @@
     font-size: 27px;
     font-weight: 550;
     margin-left: 20px;
-    padding-bottom: 5.5em;
+    
 }
 
 #intpc {
@@ -122,6 +126,12 @@
 
 .Z {
     background: linear-gradient(to bottom right, #a8e063, #56ab2f);
+    border-top-right-radius: 500px;
+    border-bottom-right-radius: 500px;
+    width: 270px;
+    height: 150px;
+}
+.ZX{
     border-top-right-radius: 500px;
     border-bottom-right-radius: 500px;
     width: 270px;
