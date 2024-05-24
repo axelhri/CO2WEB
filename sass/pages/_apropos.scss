@@ -1,156 +1,165 @@
-.mainslider{ 
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    
-    margin: 0;
-  }
-  
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ajouté pour inclure les bordures et le padding dans le calcul de la largeur */
+}
 
+/* Conteneur principal du slider */
+.mainslider {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+
+/* Conteneur du slider */
 .slider-container {
-    
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-  }
+  position: relative; /* Ajouté pour le positionnement des boutons */
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
 
-  .slider {
-    position: relative;
-    width: 100%;
-    
-    height: 400px; /* Adjust height as needed */
-  }
+/* Slider */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Ajuster la hauteur si nécessaire */
+  overflow: hidden; /* Assurer que les éléments ne débordent pas */
+}
 
-  .slide {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Separate left and opacity transitions */
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+/* Slide */
+.slide {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Transitions pour left et opacity */
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-  .slide.active {
-    left: 0;
-    opacity: 1;
-  }
+.slide.active {
+  left: 0;
+  opacity: 1;
+}
 
-  .slide.incoming-left {
-    left: -100%;
-    opacity: 1;
-  }
-  
-  .slide.incoming-right {
-    left: 100%;
-    opacity: 1;
-  }
+.slide.incoming-left {
+  left: -100%;
+  opacity: 1;
+}
 
-  .text {
-    margin-top: auto;
-    font-size: 18px;
-    opacity: 1; /* Ensure the text is always visible */
-    padding-top: 5em;
-    text-align: justify;
-    padding: 1em;
-  }
-  
+.slide.incoming-right {
+  left: 100%;
+  opacity: 1;
+}
 
-  button {
-    font-size: xx-large;
-    position: absolute;
-    top: 38%;
-    transform: translateY(-50%);
-    padding: 10px;
-    color: #019961;
-    border: none;
-    cursor: pointer;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-    z-index: 1;
-  }
+/* Texte dans les slides */
+.text {
+  margin-top: auto;
+  font-size: 18px;
+  opacity: 1; /* Toujours visible */
+  padding-top: 5em;
+  text-align: justify;
+  padding: 1em;
+}
 
-  button:hover {
-    opacity: 1;
-  }
-  
-  button:disabled {
-    opacity: 0;
-    cursor: not-allowed;
-  }
-  
-  #leftBtn {
-    left: 0px;
-  }
-  
-  #rightBtn {
-    right: 0px;
-  }
-  
+/* Boutons de navigation */
+button {
+  font-size: xx-large;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  color: #019961;
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 1;
+}
 
+button:hover {
+  opacity: 1;
+}
+
+button:disabled {
+  opacity: 0;
+  cursor: not-allowed;
+}
+
+#leftBtn {
+  left: 0px;
+}
+
+#rightBtn {
+  right: 0px;
+}
+
+/* Barre dans le texte */
 .parbar {
-    background: #019961;
-    width: 100px;
-    height: 2px;
-    margin-left: 35px;
-    margin-top: 1em;
-    
+  background: #019961;
+  width: 100px;
+  height: 2px;
+  margin-left: 35px;
+  margin-top: 1em;
 }
 
+/* Titre de la section À propos */
 .titleapropos {
-    padding-bottom: 2em;
-    font-family: "Montserrat", sans-serif;
-    font-size: 27px;
-    font-weight: 550;
-    margin-left: 20px;
-    
+  padding-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 27px;
+  font-weight: 550;
+  margin-left: 20px;
 }
 
+/* Images dans le slide */
 #intpc {
-    position: absolute;
-    width: 43%;
-    top: 57px;
-    left: 12.5%;
+  position: absolute;
+  width: 43.5%;
+  top: 75px;
+  left: 12.5%;
 }
 
 .pcic {
-    position: absolute;
-    width: 56%;
-    top: 15%;
-    left: 6%;
+  position: absolute;
+  width: 56%;
+  top: 15%;
+  left: 6%;
 }
 
+/* Élément en fond */
 .Z {
-    background: linear-gradient(to bottom right, #a8e063, #56ab2f);
-    border-top-right-radius: 500px;
-    border-bottom-right-radius: 500px;
-    width: 270px;
-    height: 150px;
+  background: linear-gradient(to bottom right, #a8e063, #56ab2f);
+  border-top-right-radius: 500px;
+  border-bottom-right-radius: 500px;
+  width: 270px;
+  height: 150px;
 }
+
 .ZX{
-    border-top-right-radius: 500px;
-    border-bottom-right-radius: 500px;
-    width: 270px;
-    height: 150px;
+  width: 270px;
+  height: 150px;
 }
 
 .FeuillesAP {
-    position: absolute;
-    width: 60%;
-    top: -2em;
-    margin-left: 4%;
+  position: absolute;
+  width: 60%;
+  top: -2em;
+  margin-left: 4%;
 }
 
-#slide2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transform: translate(10%);
+/* Spécifique au slide 2 */
+#slide2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translate(10%);
 }
-
-
