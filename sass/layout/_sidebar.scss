@@ -56,8 +56,8 @@
 
 
 /* Style des boutons "Précédent" et "Suivant" */
-button.prev,
-button.next {
+button#prev,
+button#next {
   position: absolute;
   top: 40%; /* Position verticale centrée */
   transform: translateY(-50%);
@@ -68,11 +68,11 @@ button.next {
   cursor: pointer;
 }
 
-button.prev {
+button#prev {
   left: 10px;
 }
 
-button.next {
+button#next {
   right: 20px;
 }
 
