@@ -27,7 +27,7 @@
 .slider {
   position: relative;
   width: 100%;
-  height: 400px; /* Ajuster la hauteur si nécessaire */
+  height: 500px; /* Ajuster la hauteur si nécessaire */
   overflow: hidden; /* Assurer que les éléments ne débordent pas */
 }
 
@@ -61,19 +61,20 @@
 
 /* Texte dans les slides */
 .text {
-  margin-top: auto;
+  margin-top: 1.5em;
   font-size: 18px;
   opacity: 1; /* Toujours visible */
   padding-top: 5em;
-  text-align: justify;
+  text-align: left;
   padding: 1em;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Boutons de navigation */
 button {
   font-size: xx-large;
   position: absolute;
-  top: 50%;
+  top: 20%;
   transform: translateY(-50%);
   padding: 10px;
   color: #019961;
@@ -82,6 +83,7 @@ button {
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
   z-index: 1;
+  background: transparent;
 }
 
 button:hover {
@@ -106,7 +108,6 @@ button:disabled {
   background: #019961;
   width: 100px;
   height: 2px;
-  margin-left: 35px;
   margin-top: 1em;
 }
 
@@ -123,9 +124,9 @@ button:disabled {
 /* Images dans le slide */
 #intpc {
   position: absolute;
-  width: 43.5%;
-  top: 75px;
-  left: 12.5%;
+  width: 44%;
+  top: 16%;
+  left: 12.2%;
 }
 
 .pcic {
@@ -145,9 +146,10 @@ button:disabled {
   height: 130px;
 }
 
-.ZX{
-  width: 270px;
-  height: 150px;
+.tente{
+  width: 300px;
+  height: 180px;
+  margin-left: 25%;
 }
 
 .FeuillesAP {
@@ -163,5 +165,5 @@ button:disabled {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transform: translate(10%);
+  
 }
