@@ -57,7 +57,7 @@ form ::placeholder {
 }
 
 .submit {
-    margin-top: 2em;
+    margin-top: 17em;
     border-radius: 50px;  
     color: white; 
     font-size: 20px;
@@ -89,6 +89,7 @@ form label {
     display: block;
     margin-left: 5px;
     margin-right: 5px;
+    height: 28em;
 }
 
 .formback2 {
@@ -100,7 +101,7 @@ form label {
 }
 
 .contactmain {
-    height: 33em;
+    height: 34em;
     transform: translate(0%, 0%);
 }
 
@@ -120,6 +121,7 @@ form label {
         display: block;
         margin-left: 5px;
         margin-right: 5px;
+        height: 24em;
     }
 
     .nam2 input {
@@ -171,6 +173,10 @@ form label {
         left: 50%;
         transform: translate(-50%, 0%);
         z-index: 1;
+    }
+
+    .submit {
+        margin-top: 7em;
     }
 
     .nam2 input {
@@ -383,6 +389,10 @@ form label {
     .contactmain {
         height: 50em;
         transform: translate(0%, 5%);
+    }
+
+    .submit {
+        margin-top: 12em;
     }
     
     }

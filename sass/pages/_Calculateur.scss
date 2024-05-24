@@ -4,7 +4,39 @@
 }
 
 .formcal input {
-    height: 2em;
+    height: 5em;
+}
+
+.popupcl {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    right: 1.5em;
+    top: 6em;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.popupcl p {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transform: translate(0%, -35%);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15%;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.116); 
+    width: 80%;
+    border-radius: 1em;
+}
+
+.result {
+    padding-top: 3em;
 }
 
 .formcal ::placeholder {
@@ -22,6 +54,7 @@
     box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.116); 
     margin-left: 5px;
     margin-right: 5px;
+    height: 28em;
 }
 
 .scalc {
@@ -31,7 +64,6 @@
 .scalc2 {
     display: none;
 }
-
 
 .formcal p br {
     display: none;
@@ -168,35 +200,5 @@
     .cal {
         height: 50em;
         transform: translate(0%, 5%);
-    }
-
-
-     /* CSS pour le modal */
-     .popupcl {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        right: 3em;
-        bottom: 2em;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-    }
-
-    .popupcl p {
-        font-size: 20px;
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        transform: translate(0%, -35%);
-    }
-    
-    .popup-content {
-        background-color: #fefefe;
-        margin: 15%;
-        padding: 20px;
-        box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.116); 
-        width: 80%;
-        border-radius: 1em;
     }
  }

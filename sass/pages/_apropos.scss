@@ -28,7 +28,7 @@
   position: relative;
   width: 100%;
   height: 500px; /* Ajuster la hauteur si nécessaire */
-  overflow: hidden; /* Assurer que les éléments ne débordent pas */
+  // overflow: hidden; /* Assurer que les éléments ne débordent pas */
 }
 
 /* Slide */
@@ -118,7 +118,12 @@ button:disabled {
   font-size: 27px;
   font-weight: 550;
   margin-left: 20px;
-  
+  padding-top: 1em;
+  display: block;
+}
+
+.h2pc {
+  display: none;
 }
 
 /* Images dans le slide */
@@ -165,5 +170,466 @@ button:disabled {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
 }
+
+.h2pc {
+  padding-bottom: 1em;
+  display: none;
+}
+
+// Tablette
+
+@media screen and (min-width: 768px) {
+
+  .mainslider {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    margin: 0;
+  }
+
+  .slide {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Transitions pour left et opacity */
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .Z {
+    margin-top: 1.8em;
+    background: linear-gradient(to bottom right, #a8e063, #56ab2f);
+    border-top-right-radius: 500px;
+    border-bottom-right-radius: 500px;
+    width: 400px;
+    height: 250px;
+    position: absolute;
+  }
+
+  .h2pc {
+    padding-bottom: 1em;
+    display: block;
+  }
+
+  .FeuillesAP {
+    position: absolute;
+    width: 50%;
+    top: -0.1em;
+    margin-left: 1%;
+  }
+
+  .pcic {
+    z-index: 1;
+    transform: translate(-5%, 20%);
+    width: 50%;
+  }
+
+  #intpc {
+    display: none;
+  }
+
+  .text {
+    margin-top: 1.5em;
+    font-size: 18px;
+    opacity: 1; /* Toujours visible */
+    padding-top: 5em;
+    text-align: left;
+    padding: 1em;
+    font-family: "Roboto", sans-serif;
+    width: 50%;
+    margin-left: 22em;
+  }
+
+  .slider-container {
+    position: relative; /* Ajouté pour le positionnement des boutons */
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    padding-top: 10em;
+  }
+
+  #slide2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 48em;
+  }
+
+  #txt2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    text-align: left;
+    padding: 1em;
+    font-family: "Roboto", sans-serif;
+    margin-left: 2em;
+  }
+
+  .titleapropos {
+    display: none;
+  }
+
+  .tente{
+    width: 30em;
+    height: 20em;
+    margin-left: 0%;
+  }
+
+  .mainslider{
+    height: 45em;
+  }
+
+  #pcpb {
+    display: none;
+  }
+
+  .app {
+    position: absolute;
+    right: 20em;
+    top: 3EM;
+      width: 2px;
+      height: 2px;
+      border-radius: 50%;
+      border: 8px solid #79C258;
+  }
+
+  .app2 {
+    position: absolute;
+    right: 40em;
+    top: 1.5EM;
+      width: 2px;
+      height: 2px;
+      border-radius: 50%;
+      border: 8px solid #79C258;
+  }
+
+  button {
+    font-size: xx-large;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    color: #019961;
+    border: none;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1;
+    background: transparent;
+  }
+  
+
+      // Notebook
+
+@media screen and (min-width: 1336px) {
+  .mainslider {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  .mainslider {
+    height: 20em;
+  }
+
+  .slide {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Transitions pour left et opacity */
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .Z {
+    margin-top: 1.8em;
+    background: linear-gradient(to bottom right, #a8e063, #56ab2f);
+    border-top-right-radius: 500px;
+    border-bottom-right-radius: 500px;
+    width: 600px;
+    height: 300px;
+    position: absolute;
+  }
+
+  .h2pc {
+    padding-bottom: 1em;
+    display: block;
+  }
+
+  .FeuillesAP {
+    position: absolute;
+    width: 30%;
+    top: -0.1em;
+    margin-left: 6%;
+  }
+
+  .pcic {
+    z-index: 1;
+    transform: translate(10%, 40%);
+    width: 30%;
+  }
+
+  #intpc {
+    display: none;
+  }
+
+  .text {
+    margin-top: 1.5em;
+    font-size: 18px;
+    opacity: 1; /* Toujours visible */
+    padding-top: 5em;
+    text-align: left;
+    padding: 1em;
+    font-family: "Roboto", sans-serif;
+    width: 50%;
+    margin-left: 35em;
+  }
+
+  .slider-container {
+    position: relative; /* Ajouté pour le positionnement des boutons */
+    width: 100%;
+    max-width: 1366px;
+    text-align: center;
+    padding-top: 5em;
+  }
+
+  #slide2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 58em;
+  }
+
+  #txt2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    text-align: left;
+    padding: 1em;
+    font-family: "Roboto", sans-serif;
+    margin-left: 2em;
+  }
+
+  .titleapropos {
+    display: none;
+  }
+
+  .tente{
+    width:30em;
+    height: 30em;
+    margin-left: 0%;
+  }
+
+  .mainslider{
+    height: 38em;
+  }
+
+  #pcpb {
+    display: none;
+  }
+
+  .app {
+    position: absolute;
+    right: 40em;
+    top: 3EM;
+      width: 2px;
+      height: 2px;
+      border-radius: 50%;
+      border: 8px solid #79C258;
+  }
+
+  .app2 {
+    position: absolute;
+    right: 49em;
+    top: 1.5EM;
+      width: 2px;
+      height: 2px;
+      border-radius: 50%;
+      border: 8px solid #79C258;
+  }
+
+  button {
+    font-size: xx-large;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    color: #019961;
+    border: none;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1;
+    background: transparent;
+  }
+  }
+
+          // Desktop
+
+          @media screen and (min-width: 1920px) {
+            .mainslider {
+              font-family: Arial, sans-serif;
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-start;
+              margin: 0;
+            }
+          
+          
+            .slide {
+              width: 100%;
+              position: absolute;
+              top: 0;
+              left: 100%;
+              transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Transitions pour left et opacity */
+              opacity: 0;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+            }
+          
+            .Z {
+              margin-top: 1.8em;
+              background: linear-gradient(to bottom right, #a8e063, #56ab2f);
+              border-top-right-radius: 500px;
+              border-bottom-right-radius: 500px;
+              width: 600px;
+              height: 300px;
+              position: absolute;
+            }
+          
+            .h2pc {
+              padding-bottom: 1em;
+              display: block;
+            }
+          
+            .FeuillesAP {
+              position: absolute;
+              width: 25%;
+              top: -0.1em;
+              margin-left: 6%;
+            }
+          
+            .pcic {
+              z-index: 1;
+              transform: translate(10%, 40%);
+              width: 20%;
+            }
+          
+            #intpc {
+              display: none;
+            }
+          
+            .text {
+              margin-top: 1.5em;
+              font-size: 18px;
+              opacity: 1; /* Toujours visible */
+              padding-top: 5em;
+              text-align: left;
+              padding: 1em;
+              font-family: "Roboto", sans-serif;
+              width: 50%;
+              margin-left: 50em;
+            }
+          
+            .slider-container {
+              position: relative; /* Ajouté pour le positionnement des boutons */
+              width: 100%;
+              max-width: 1920px;
+              text-align: center;
+              padding-top: 10em;
+            }
+          
+            #slide2 {
+              display: flex;
+              flex-direction: row-reverse;
+              align-items: flex-start;
+              justify-content: space-between;
+              max-width: 58em;
+            }
+          
+            #txt2 {
+              display: flex;
+              flex-direction: column;
+              font-size: 18px;
+              text-align: left;
+              padding: 1em;
+              font-family: "Roboto", sans-serif;
+              margin-left: 2em;
+            }
+          
+            .titleapropos {
+              display: none;
+            }
+          
+          
+            .mainslider{
+              height: 50em;
+            }
+          
+            #pcpb {
+              display: none;
+            }
+          
+            #pchid {
+              display: none;
+            }
+
+            #pcvers {
+              display: block;
+              width: 60em;
+              position: absolute;
+              top: -10em;
+              left: 60em;
+            }
+
+            .app {
+              position: absolute;
+              right:56em;
+              top: 3EM;
+                width: 2px;
+                height: 2px;
+                border-radius: 50%;
+                border: 8px solid #79C258;
+            }
+          
+            .app2 {
+              position: absolute;
+              right: 49em;
+              top: 1.5EM;
+                width: 2px;
+                height: 2px;
+                border-radius: 50%;
+                border: 8px solid #79C258;
+            }
+          
+            button {
+              font-size: xx-large;
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              padding: 10px;
+              color: #019961;
+              border: none;
+              cursor: pointer;
+              opacity: 1;
+              transition: opacity 0.5s ease-in-out;
+              z-index: 1;
+              background: transparent;
+            }
+
+              }
+ }
