@@ -2,6 +2,10 @@
     margin: 0;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 header {
     padding: 1em;
 }
@@ -50,6 +54,7 @@ nav img {
     visibility: visible;
     transition: 300ms;
     opacity: 1;
+    
 }
 
 .burgerlist li {
